@@ -1,2 +1,3 @@
-# Daily-Coding
-code for all the questions for each day 
+100-DAYS-OF-CODE
+Code for the questions for each day 
+
