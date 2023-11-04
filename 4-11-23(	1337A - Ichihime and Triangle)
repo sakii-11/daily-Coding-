@@ -1,0 +1,17 @@
+Questions : 	1337A - Ichihime and Triangle
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    while(n--)
+    {
+        int a,b,c,d;
+        cin >> a >> b >> c >> d;
+        cout << b << " " << c << " " << c;
+        cout<< endl;
+    }
+}
