@@ -1,0 +1,30 @@
+Question: 	785A - Anton and Polyhedrons
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    int ans=0;
+    for(int i=0; i<n; i++)
+    {
+        string curr;
+        cin >>curr;
+        if(curr == "Tetrahedron")
+        ans+=4;
+        if(curr== "Cube")
+        ans+= 6;
+        if(curr == "Octahedron")
+        ans+= 8;
+        if(curr== "Dodecahedron")
+        ans += 12;
+        if(curr== "Icosahedron")
+        ans += 20;
+        curr.erase();
+        
+    }
+    cout <<ans << endl;
+}
