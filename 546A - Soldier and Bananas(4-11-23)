@@ -1,0 +1,21 @@
+Question :	546A - Soldier and Bananas
+//The first line contains three positive integers k, n, w (1  ≤  k, w  ≤  1000, 0 ≤ n ≤ 109), the cost of the first banana, initial number of dollars the soldier has and number of bananas he wants.
+
+code :
+#include<iostream>
+using namespace std;
+int main()
+{
+    int k, n, w;
+    cin >> k >> n >> w;
+    int ans=0;
+    for(int i=1; i<=w; i++)
+    {
+        ans += k*i;
+    }
+    if(ans-n>0)
+    cout << ans-n << endl;
+    else
+    cout << 0 << endl;
+    return 0;
+}
