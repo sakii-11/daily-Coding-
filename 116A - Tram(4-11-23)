@@ -1,0 +1,21 @@
+Question: 116A - Tram
+
+code:
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int n; 
+    cin >> n;
+    int curr=0, maxi = 0;
+    for(int i=0; i<n; i++)
+    {
+        int a,b;
+        cin >> a >> b;
+        curr = curr+(b-a);
+        maxi = max(maxi, curr);
+    }
+    cout << maxi<< endl;
+}
