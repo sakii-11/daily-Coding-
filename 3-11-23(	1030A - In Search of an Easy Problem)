@@ -1,0 +1,22 @@
+Question : 	1030A - In Search of an Easy Problem
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    bool flag =0;
+    for(int i=0; i<n; i++)
+    {
+        int a;
+        cin>> a;
+        if(a==1)
+        flag =1;
+    }
+    if(flag)
+    cout << "HARD" << endl;
+    else
+    cout << "EASY" << endl;
+}
