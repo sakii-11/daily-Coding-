@@ -1,0 +1,26 @@
+Question: 	1430C - Numbers on Whiteboard
+code:
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        long long int n;
+        cin >> n;
+        cout << 2 << endl; //the ans if you minisize from the end will always be 2
+        int a=n, b=n-1; //important becuase if you start from the beginning the value will maximise
+        for(int i=1; i<n; i++)
+        {
+            cout << a <<" "<< b << endl;
+            a= (a+b+1)/2;
+            b--;
+        }
+
+    }
+}
